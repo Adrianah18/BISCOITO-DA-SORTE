@@ -2,34 +2,45 @@ import React, { useState } from "react";
 import { View, Image, StyleSheet, Text, TouchableOpacity } from "react-native";
 
 export default function App() {
-  const [img, setImg] = useState(require("../biscoito_da_sorte/assets/biscoitoaberto-removebg-preview.png"));
+  const [img, setImg] = useState(require("./assets/biscoitoaberto-removebg-preview.png"));
   const [textFrase, setTextFrase] = useState("");
 
   let frases = [
-    "O caminho é longo, mas a derrota é certa.",
-    "É só uma fase ruim, logo vai piorar.",
-    "Pare de desejar e comece a desistir.",
-    "Seja o protagonista do seu fracasso.",
-    "Seu maior problema é você.",
-    "Acreditar que você pode já é meio caminho errado.",
-    "Nada é em vão. Tudo vem para te decepcionar.",
-    "Se ainda não deu errado, é porque ainda não acabou.",
-    "Tudo passa, nem que seja por cima de você.",
-    "O universo não tá nem aí para você.",
-    "Até as torres mais altas começaram do chão.",
-    "É hora de criar espaço para uma nova história.",
-    "Você decide se hoje é apenas mais um dia ou se é o dia em que tudo muda.",
-    "Tudo que você desejam está do outro lado do medo.",
-  ];
+    "A paciência é a chave para grandes conquistas.",
+    "Espalhe amor e alegria, e a paz virá ao seu encontro.",
+    "Cultive a razão e a serenidade em todos os momentos.",
+    "Aceite seus defeitos, eles fazem parte do seu caminho para a virtude.",
+    "Toda grande jornada começa com um pequeno passo.",
+    "Acredite em si mesmo, e você estará no caminho certo.",
+    "Tudo acontece por uma razão; confie no processo.",
+    "O que é para ser seu encontrará uma forma de chegar até você.",
+    "Tudo passa, e o que permanece é o que realmente importa.",
+    "Você é parte de um universo grandioso e cheio de possibilidades.",
+    "Até os maiores sonhos começaram com um pequeno pensamento.",
+    "Agora é o momento de escrever uma nova história de sucesso.",
+    "Hoje pode ser o dia em que tudo muda para melhor.",
+    "Enfrente seus medos, e você encontrará o que procura.",
+    "Cada novo dia traz uma nova oportunidade de ser feliz.",
+    "O universo conspira a favor daqueles que acreditam.",
+    "Grandes conquistas começam com um único passo.",
+    "Acredite que o melhor ainda está por vir.",
+    "A sorte favorece os corajosos.",
+    "A sabedoria vem para aqueles que sabem ouvir.",
+    "A vida é um presente; aproveite cada momento.",
+    "Seja a mudança que você deseja ver no mundo.",
+    "A força interior é a chave para superar qualquer desafio.",
+    "Os desafios são oportunidades disfarçadas de dificuldades.",
+    "Sua determinação é a luz que guiará seu caminho.",
+];
 
   function quebraBiscoito() {
     let numeroAleatorio = Math.floor(Math.random() * frases.length);
     setTextFrase(' "' + frases[numeroAleatorio] + '" ');
-    setImg(require("../biscoito_da_sorte/assets/biscoitoaberto-removebg-preview.png"));
+    setImg(require("./assets/biscoitoaberto-removebg-preview.png"));
   }
 
   function reiniciarBiscoito() {
-    setImg(require("../biscoito_da_sorte/assets/biscoitofechado-removebg-preview.png"));
+    setImg(require("./assets/biscoitofechado-removebg-preview.png"));
     setTextFrase("");
   }
 
