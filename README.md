@@ -1,7 +1,7 @@
 <h1 align="center"> Biscoitinho da Sorte </h1>
 
-![Descrição da Imagem](https://github.com/Adrianah18/BISCOITO-DA-SORTE/blob/main/assets/biscoitocrop.png)
-Biscoito da Sorte
+![Biscoito da Sorte](https://github.com/Adrianah18/BISCOITO-DA-SORTE/blob/main/assets/biscoitocrop.png)
+
 <h2>Descrição do projeto</h2>
 
 <p>Este mini-projeto consiste na criação de um aplicativo chamado "Biscoito da Sorte". O usuário pode clicar no botão "Quebrar Biscoito" para revelar uma frase da sorte. Após quebrar o biscoito, o botão é desativado, impedindo novos cliques. Há também um botão "Reiniciar Biscoito", que restaura a funcionalidade, permitindo que o usuário quebre o biscoito novamente e receba uma nova frase.</p>
